@@ -174,9 +174,9 @@ class Application:
             vti_pressure = self.itc.transmit(f'READ:{uid_vti_pressure_set}:LOOP:TSET',
                                              'Error reading VTI pressure set point',
                                              False)
-            probe_temperature = probe_temperature.split(':')
-            if len(probe_temperature) > 0:
-                self.gui.update_ent(self.gui.ent_probe_temp_set, probe_temperature[-1])
+            # probe_temperature = probe_temperature.split(':')
+            # if len(probe_temperature) > 0:
+                # self.gui.update_ent(self.gui.ent_probe_temp_set, probe_temperature[-1])
             vti_temperature = vti_temperature.split(':')
             if len(vti_temperature) > 0:
                 self.gui.update_ent(self.gui.ent_vti_temp_set, vti_temperature[-1])

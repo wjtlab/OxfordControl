@@ -78,11 +78,11 @@ class GUI(tk.Frame):
         self.ent_vti_temp.grid(row=2, column=1, padx=3, pady=1)
         self.lbl_vti_press.grid(row=3, column=0, padx=3, pady=1)
         self.ent_vti_press.grid(row=3, column=1, padx=3, pady=1)
-        self.lbl_probe_temp_set = tk.Label(self.frm_itc, text='Probe Temp Set')
-        self.ent_probe_temp_set = tk.Entry(self.frm_itc, fg='red', bg='black', insertbackground='white',
-                                       font=input_font, width=10, disabledforeground='black', disabledbackground='white',
-                                       justify='center', state='disabled')
-        self.btn_probe_temp_set = tk.Button(self.frm_itc, text='Set', state='disabled')
+        # self.lbl_probe_temp_set = tk.Label(self.frm_itc, text='Probe Temp Set')
+        # self.ent_probe_temp_set = tk.Entry(self.frm_itc, fg='red', bg='black', insertbackground='white',
+        #                                font=input_font, width=10, disabledforeground='black', disabledbackground='white',
+        #                                justify='center', state='disabled')
+        # self.btn_probe_temp_set = tk.Button(self.frm_itc, text='Set', state='disabled')
         self.lbl_vti_temp_set = tk.Label(self.frm_itc, text='VTI Temp Set')
         self.ent_vti_temp_set = tk.Entry(self.frm_itc, fg='red', bg='black', insertbackground='white',
                                      font=input_font, width=10, disabledforeground='black', disabledbackground='white',
@@ -93,9 +93,9 @@ class GUI(tk.Frame):
                                       font=input_font, width=10, disabledforeground='black', disabledbackground='white',
                                       justify='center', state='disabled')
         self.btn_vti_press_set = tk.Button(self.frm_itc, text='Set', state='disabled')
-        self.lbl_probe_temp_set.grid(row=4, column=0, padx=3, pady=1)
-        self.ent_probe_temp_set.grid(row=4, column=1, padx=3, pady=1)
-        self.btn_probe_temp_set.grid(row=4, column=2, padx=3, pady=1, sticky=tk.W)
+        # self.lbl_probe_temp_set.grid(row=4, column=0, padx=3, pady=1)
+        # self.ent_probe_temp_set.grid(row=4, column=1, padx=3, pady=1)
+        # self.btn_probe_temp_set.grid(row=4, column=2, padx=3, pady=1, sticky=tk.W)
         self.lbl_vti_temp_set.grid(row=5, column=0, padx=3, pady=1)
         self.ent_vti_temp_set.grid(row=5, column=1, padx=3, pady=1)
         self.btn_vti_temp_set.grid(row=5, column=2, padx=3, pady=1, sticky=tk.W)
@@ -195,7 +195,7 @@ class GUI(tk.Frame):
             self.ent_probe_temp['state'] = 'readonly'
             self.ent_vti_temp['state'] = 'readonly'
             self.ent_vti_press['state'] = 'readonly'
-            self.ent_probe_temp_set['state'] = 'readonly'
+            # self.ent_probe_temp_set['state'] = 'readonly'
             self.ent_vti_temp_set['state'] = 'readonly'
             self.ent_vti_press_set['state'] = 'readonly'
             self.btn_vti_temp_set['state'] = 'normal'
@@ -210,7 +210,7 @@ class GUI(tk.Frame):
             self.ent_probe_temp['state'] = 'disabled'
             self.ent_vti_temp['state'] = 'disabled'
             self.ent_vti_press['state'] = 'disabled'
-            self.ent_probe_temp_set['state'] = 'disabled'
+            # self.ent_probe_temp_set['state'] = 'disabled'
             self.ent_vti_temp_set['state'] = 'disabled'
             self.ent_vti_press_set['state'] = 'disabled'
             self.btn_vti_temp_set['state'] = 'disabled'
